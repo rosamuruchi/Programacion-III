@@ -1,0 +1,3 @@
+rosalia,burgos,ro.burgos@hotmail.com,./Fotos/rosalia.jpg
+ana,burgos,ana.21544@hotmail.com,./Fotos/ana.jpg
+jose,burgos,jose000@hotmail.com,./Fotos/joseburgos.jpg
