@@ -1,0 +1,47 @@
+Api-Rest
+
+en la carpeta de trabajo/htdocs
+abrir Terminal y colocar :     composer require slim/slim "^3.12"
+se crearan carpetas...
+luego colocar un nuevo archivo .htaccess y pegar lo siguiente:
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+en el index.php colocar lo siguiente:
+------------------------------------------------------------------------------
+<?php
+
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface as Response;
+
+require_once './vendor/autoload.php';
+
+$config['displayErrorDetails']=true;
+$config['addContentLengthHeader']=false;
+
+$app = new \Slim\App(["settings" => $config]);
+
+$app->get('/', function (Request $req,  Response $res, $args = []) {
+    return $res->withStatus(200)->write('Good Request');
+});
+
+$app->run();
+?>
+
+-----------------------------------------------------------------------------------
+
+En el postman colocar la firma de :
+
+localhost/Clase7/
+
+Deberia correr...
+
+----------------------------------------------------------------------------------
+/*
+        
+        $this->get('/ventas', \PizzeriaAPI::class . ':consultarVenta');
+        $this->delete('/pizzas', \PizzeriaAPI::class . ':borrarPizza');
+        $this->get('/logs', \PizzeriaAPI::class . ':consultarLog');*/
