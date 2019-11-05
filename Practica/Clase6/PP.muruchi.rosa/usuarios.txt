@@ -1,0 +1,4 @@
+10,rocio,2020,rocio@hotmail.com,./img/fotos/10.jpg,./img/fotos/10(2).jpg
+12,jose,9999,jose@hotmail.com,./img/fotos/12.jpg,./img/fotos/12(2).jpg
+555,carlos,4444,sssss,./img/fotos/555.png,./img/fotos/555(2).png
+90,rocio,2020,rocio@hotmail.com,./img/fotos/90.jpg,./img/fotos/90(2).jpg
