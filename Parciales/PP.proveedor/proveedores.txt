@@ -1,0 +1,2 @@
+1,jose,jose@gmail.com,./img/fotos/1.jpg
+5,maria,maria@gmail.com,./img/fotos/5.jpg

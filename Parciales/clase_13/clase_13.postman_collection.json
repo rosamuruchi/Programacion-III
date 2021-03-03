@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "d456f308-1008-4745-8a78-89c8fafed652",
+		"name": "clase_13",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/usuariosORM/usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "lalala@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "alumno",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "alumno",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/lion_/Desktop/fotoalumno.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "profesor@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "profesor",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "profesor",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "legajo",
+							"value": "108",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "alumno",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"login"
+					],
+					"query": [
+						{
+							"key": "legajo",
+							"value": "103",
+							"disabled": true
+						},
+						{
+							"key": "clave",
+							"value": "alumno",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargar Materia",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzM4NDExOTEsImF1ZCI6ImU0NDNkNTQ3NDU5NGE5NzhjMTk2YWYxNWM3YTAxMGM1NTU4Y2JjNGYiLCJkYXRhIjp7ImVtYWlsIjoibGFsYWxhQGdtYWlsLmNvbSIsImxlZ2FqbyI6MTAzLCJ0aXBvIjoiYWx1bW5vIn0sImFwcCI6IkFQSSBSRVNUIENEIFVUTiBGUkEifQ.KdX_fkrHbG1dKYucLRoz6f5ZDrfcgP-SHmrMMluJ92Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "estadistica",
+							"type": "text"
+						},
+						{
+							"key": "cuatrimestre",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cupos",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/materia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"materia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzM5MzE3MzIsImF1ZCI6ImU0NDNkNTQ3NDU5NGE5NzhjMTk2YWYxNWM3YTAxMGM1NTU4Y2JjNGYiLCJkYXRhIjp7ImVtYWlsIjoicHJvZmVzb3JAZ21haWwuY29tIiwibGVnYWpvIjoxMTEsInRpcG8iOiJwcm9mZXNvciJ9LCJhcHAiOiJBUEkgUkVTVCBDRCBVVE4gRlJBIn0.swuo02X0FMtNPoRoSy1s3qrBQFfqSA6IExr7G_NriqA",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "profesor10@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "fo",
+							"type": "file",
+							"src": "/C:/Users/lion_/Desktop/fotoalumno.jpg",
+							"disabled": true
+						},
+						{
+							"key": "materiasDictadas[0]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "materiasDictadas[1]",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/usuario/111",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"usuario",
+						"111"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "profesor10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InscripcionMateria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzM5MzM1ODMsImF1ZCI6ImU0NDNkNTQ3NDU5NGE5NzhjMTk2YWYxNWM3YTAxMGM1NTU4Y2JjNGYiLCJkYXRhIjp7ImVtYWlsIjoiYWx1bW5vMjNAZ21haWwuY29tIiwibGVnYWpvIjoxMDgsInRpcG8iOiJhbHVtbm8ifSwiYXBwIjoiQVBJIFJFU1QgQ0QgVVROIEZSQSJ9.4bR4JRa4NvehzXYl7tIYDQ07YvjS5TADDQ5AAB8tQlM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/usuariosORM/inscripcion/?idMateria=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"inscripcion",
+						""
+					],
+					"query": [
+						{
+							"key": "idMateria",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verMaterias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzM5Mjg0NzYsImF1ZCI6ImU0NDNkNTQ3NDU5NGE5NzhjMTk2YWYxNWM3YTAxMGM1NTU4Y2JjNGYiLCJkYXRhIjp7ImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwibGVnYWpvIjoxMDUsInRpcG8iOiJhZG1pbiJ9LCJhcHAiOiJBUEkgUkVTVCBDRCBVVE4gRlJBIn0.QDbj4cCEnduWXprGFCtmbjkRtJF4GQD-Ic8ot-dRAFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "lalala@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "clave",
+							"value": "alumno",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "tipo",
+							"value": "alumno",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/lion_/Desktop/fotoalumno.jpg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/usuariosORM/materias",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"materias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostrarMateriaPorID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzM5MzE3MzIsImF1ZCI6ImU0NDNkNTQ3NDU5NGE5NzhjMTk2YWYxNWM3YTAxMGM1NTU4Y2JjNGYiLCJkYXRhIjp7ImVtYWlsIjoicHJvZmVzb3JAZ21haWwuY29tIiwibGVnYWpvIjoxMTEsInRpcG8iOiJwcm9mZXNvciJ9LCJhcHAiOiJBUEkgUkVTVCBDRCBVVE4gRlJBIn0.swuo02X0FMtNPoRoSy1s3qrBQFfqSA6IExr7G_NriqA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/usuariosORM/materias/?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuariosORM",
+						"materias",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

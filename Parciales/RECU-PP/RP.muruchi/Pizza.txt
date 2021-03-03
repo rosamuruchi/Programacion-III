@@ -1,0 +1,1 @@
+{"id":1,"precio":"800","tipo":"molde","cantidad":399,"sabor":"muzza","fotoUno":".\/images\/pizzas\/foto1-molde-muzza-21-10-2019-2050.jpg","fotoDos":".\/images\/pizzas\/foto2-molde-muzza-21-10-2019-2050.jpg"}

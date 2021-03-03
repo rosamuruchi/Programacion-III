@@ -1,0 +1,2 @@
+1,galletas,150
+5,vino,45
